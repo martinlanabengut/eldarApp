@@ -20,7 +20,7 @@ public class Transaction {
         return card.isValid(); // A card is valid to operate if its expiration date is greater than the present day.
     }
 
-    public double getTransactionRate() {
+    public void getTransactionRate() {
         if (!isCardValidForTransaction()) {
             throw new IllegalArgumentException("Card is not valid for the transaction.");
         }
@@ -29,7 +29,7 @@ public class Transaction {
             throw new IllegalArgumentException("Transaction amount exceeds the limit.");
         }
 
-        return RateCalculator.getRate(card.getBrand(), amount);
+        RateCalculator.getRate(card.getBrand(), amount);
     }
 }
 

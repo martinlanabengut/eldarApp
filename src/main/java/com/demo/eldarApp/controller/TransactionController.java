@@ -1,7 +1,5 @@
 package com.demo.eldarApp.controller;
 
-import com.demo.eldarApp.model.Card;
-import com.demo.eldarApp.model.Transaction;
 import com.demo.eldarApp.service.RateCalculator;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
